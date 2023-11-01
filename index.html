@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <a href="https://www.your-website-url.com">
             <img src="./images/Logo.jpg" alt="Mein Logo">
         </a>
@@ -31,6 +31,7 @@
             <br>A Frontend Developer
             <br>with Passion.
         </h1>
+        <div class="styling"></div>
     </section>
 
     <section id="my-skills">
@@ -58,11 +59,14 @@
     </section>
 
     <section id="about-me">
+        <div class="about">
         <h2>About me</h2>
         <p>I started my IT journey coding small websites during my studies. 
             Although my career path didnt lead me directly to IT, I continued enjoying building websites and applications. 
             Finally, I took the chance to follow my passion for IT after joining a professional coding academy. 
             Now I am looking forward to interesting and challenging projects.</p>
+        </div>
+        <img src="./images/_K4A5022.jpg" alt="Me programming">
     </section>
 
     <section id="portfolio">
@@ -84,20 +88,31 @@
     <section id="contact">
         <aside class="contact-left">
         <h2>Contact me</h2>
-        <p>Now that you now a lot about me, let me now if you are interested to work with me</p>
+        <p>Now that you now a lot about me, let me now <br>if you are interested to work with me.</p>
         </aside>
         <aside class="contact-right">
-            <p>questionary</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" resize="none" required></textarea>
+                
+                <input type="submit" value="Absenden">
+            </form>
         </aside>
     </section>
 
     <footer>
         <aside id="footer-left">
-            <ul>
-                <li><img src="./images/Logo.jpg" alt="Mein Logo">Logo</li>
+            <div class="logos">
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-github"></i>
-            </ul>
+            </div>
+            <img src="./images/Logo.jpg" alt="Mein Logo">
         </aside>
         <aside id="footer-right">
             <ul>

@@ -4,8 +4,13 @@
     width: 100%;    
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Style the navigation container */
-nav {
+#nav {
     background-color: #333; /* Background color for the navigation bar */
     color: #fff; /* Text color */
     padding: 10px; /* Add some padding around the navigation bar */
@@ -18,12 +23,12 @@ nav {
 }
 
 /* Style the logo */
-nav a {
+#nav a {
     text-decoration: none; /* Remove underlines from the logo link */
 }
 
 /* Style the menu list */
-ul {
+#nav ul {
     list-style: none; /* Remove default list bullet points */
     display: flex; /* Arrange menu items horizontally */
     margin-right: 100px; /* Remove default margin for the list */
@@ -32,27 +37,28 @@ ul {
 }
 
 /* Style individual menu items */
-li {
+#nav li {
     margin-right: 40px; /* Add some spacing between menu items */
 }
 
 /* Style menu item links */
-a {
+#nav a {
     color: #fff; /* Text color for menu links */
     text-decoration: none; /* Remove underlines from menu links */
     font-weight: bold; /* Make the text bold */
 }
 
 /* Style menu item links on hover */
-a:hover {
+#nav a:hover {
     text-decoration: underline; /* Underline the link on hover */
 }
 
 /* Limit the maximum width of the logo image */
-nav a img {
+#nav a img {
     max-width: 80px; /* Adjust the value to the desired width */
     height: auto; /* Maintain the aspect ratio when resizing */
     margin-left: 20px;
+    border-radius: 50%;
 }
 
 /*-----------------------------------------------*/
@@ -72,7 +78,7 @@ nav a img {
     height: 550px; /* Set the image height */
     border-radius: 50%; /* Make the image round by setting border-radius to 50% */
     margin-right: -80px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 #home h1 {
@@ -80,10 +86,19 @@ nav a img {
     margin-top: 20px; /* Add some top margin to the heading */
 }
 
+.styling {
+    background-color: black;
+    opacity: 0.2;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+
 /*-----------------------------------------------*/
 
 #my-skills {
-    background-color: #f5f5f5; /* Set a background color for the section */
     padding: 20px; /* Add some padding around the content */
     text-align: center; /* Center-align the content within the section */
     display: flex;
@@ -109,9 +124,142 @@ nav a img {
     margin: 0px 10px;
 }
 
-.fa-brands,
+#my-skills .fa-brands,
 .fa-solid {
-    font-size: 40px; /* Set the font size for the icons */
-    margin: 10px; /* Add margin around the icons for spacing */
+    font-size: 55px; /* Set the font size for the icons */
+    margin: 20px 10px 5px 10px; /* Add margin around the icons for spacing */
 }
 
+/*-----------------------------------------------*/
+#about-me {
+    height: 500px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-me .about {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.about h2 {
+    font-size: 40px;
+}
+
+#about-me img {
+    height: auto;
+    width: 500px;
+    margin-right: 80px;
+}
+
+/*-----------------------------------------------*/
+#portfolio {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+/*-----------------------------------------------*/
+#contact {
+    background-color: #f5f5f5;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-left {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contact-right {
+    margin-right: 100px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+/*-----------------------------------------------*/
+
+/* Style for the footer section */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Add padding around the content */
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Space elements evenly within the footer */
+}
+
+/* Style for the left footer section */
+#footer-left {
+    display: flex; /* Use flexbox to arrange elements horizontally */
+    flex-direction: column;
+    align-items: left; /* Center elements vertically within the section */
+    margin-left: 50px;
+}
+
+#footer-left img {
+    width: 70px; /* Set the image width */
+    height: 70px; /* Set the image height */
+    border-radius: 50%; /* Make the image round by setting border-radius to 50% */
+    margin-right: 10px; /* Add margin to the right of the image */
+    margin-top: 20px;
+}
+
+.logos {
+    display: flex; /* Use flexbox to arrange elements horizontally */
+    align-items: center; /* Center elements vertically within the section */
+    flex-direction: column; /* Stack logos vertically */
+    margin: 15px;
+}
+
+.logos i {
+    font-size: 40px; /* Set the font size for the icons */
+    margin: 10px; /* Add margin between icons and your main logo */
+}
+
+/* Style for the right footer section */
+#footer-right {
+    margin-right: -800px; /* Add margin to the right side of the footer right section */
+    display: flex; /* Use flexbox to arrange elements horizontally */
+    align-items: center; /* Center elements vertically within the section */
+    justify-content: center; /* Center the content horizontally */
+}
+
+#footer-right ul {
+    list-style: none; /* Remove the bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to arrange list items horizontally */
+    flex-direction: column; /* Stack list items vertically */
+}
+
+#footer-right li {
+    margin-bottom: 10px; /* Add margin between list items in a vertical column layout */
+}
+
+#footer-right a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set link text color */
+}
+
+#footer-right a:hover {
+    text-decoration: underline; /* Add underline to links on hover */
+}
