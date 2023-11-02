@@ -46,6 +46,7 @@ body {
     color: #fff; /* Text color for menu links */
     text-decoration: none; /* Remove underlines from menu links */
     font-weight: bold; /* Make the text bold */
+    white-space: nowrap;
 }
 
 /* Style menu item links on hover */
@@ -59,6 +60,49 @@ body {
     height: auto; /* Maintain the aspect ratio when resizing */
     margin-left: 20px;
     border-radius: 50%;
+}
+
+#nav .menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #nav .menu-icon {
+        display: block;
+        font-size: 30px; /* Passen Sie die Schriftgröße nach Bedarf an */
+        cursor: pointer; /* Zeigerzeiger für das Symbol */
+        margin-left: 70%;
+    }
+
+    /* Fügen Sie hier den Stil für das sichtbare Menü hinzu */
+    #nav ul {
+        display: none; /* Das Menü standardmäßig ausblenden */
+        background-color: #333; /* Hintergrundfarbe des Menüs */
+        position: absolute;
+        top: 50px; /* Position des Menüs relativ zur Kopfzeile */
+        right: 0;
+        width: 30%; /* Vollständige Bildschirmbreite */
+        padding: 0;
+        text-align: center;
+    }
+
+    #nav ul li {
+        margin: 0;
+    }
+
+    #nav ul li a {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Stil für Menülinks bei Hover */
+    #nav ul li a:hover {
+        background-color: #555;
+        text-decoration: none;
+    }
 }
 
 /*-----------------------------------------------*/
@@ -77,12 +121,12 @@ body {
     width: 550px; /* Set the image width */
     height: 550px; /* Set the image height */
     border-radius: 50%; /* Make the image round by setting border-radius to 50% */
-    margin-right: -80px;
+    margin-right: -65px;
     margin-left: 100px;
 }
 
-#home h1 {
-    font-size: 55px; /* Set the font size for the heading */
+h1 {
+    font-size: 45px; /* Set the font size for the heading */
     margin-top: 20px; /* Add some top margin to the heading */
 }
 
@@ -110,8 +154,8 @@ body {
     margin: 0 20px; /* Add some margin for spacing */
 }
 
-.my-skills-left h2 {
-    font-size: 40px; /* Set the font size for the heading */
+h2 {
+    font-size: 30px; /* Set the font size for the heading */
 
 }
 
@@ -144,14 +188,12 @@ body {
     margin-left: 100px;
 }
 
-.about h2 {
-    font-size: 40px;
-}
 
 #about-me img {
     height: auto;
-    width: 500px;
-    margin-right: 80px;
+    width: 30%;
+    margin-right: 9%;
+    border-radius: 10%;
 }
 
 /*-----------------------------------------------*/
@@ -237,7 +279,7 @@ footer {
 
 /* Style for the right footer section */
 #footer-right {
-    margin-right: -800px; /* Add margin to the right side of the footer right section */
+    margin-left: 50%; /* Add margin to the right side of the footer right section */
     display: flex; /* Use flexbox to arrange elements horizontally */
     align-items: center; /* Center elements vertically within the section */
     justify-content: center; /* Center the content horizontally */
