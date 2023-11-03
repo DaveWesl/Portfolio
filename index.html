@@ -14,15 +14,15 @@
 
 <body>
     <nav id="nav">
-        <a href="https://www.your-website-url.com">
+        <a class="navlink" href="#home">
             <img src="./images/Logo.jpg" alt="Mein Logo">
         </a>
         <i class="fa-solid fa-bars menu-icon"></i>
         <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#my-skills">My Skills</a></li>
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a class="navlink" href="#home">Home</a></li>
+            <li><a class="navlink" href="#my-skills">My Skills</a></li>
+            <li><a class="navlink" href="#about-me">About me</a></li>
+            <li><a class="navlink" href="#portfolio">Portfolio</a></li>
         </ul>
     </nav>
 
@@ -62,10 +62,10 @@
     <section id="about-me">
         <div class="about">
         <h2>About me</h2>
-        <p>I started my IT journey coding small websites during my studies. 
-            Although my career path didnt lead me directly to IT, I continued enjoying building websites and applications. 
-            Finally, I took the chance to follow my passion for IT after joining a professional coding academy. 
-            Now I am looking forward to interesting and challenging projects.</p>
+        <p>During the pandemic, my life underwent significant changes. I'm currently working as a Sales Manager in the field of Marketing. 
+            Additionally, for the past few months, I have been studying Front-End Development on platforms like Codecademy. 
+            I have always been interested in the logic of programming and the possibilities it offers to create software and other applications. 
+            Due to the changes in my life, I decided to dive into learning it. I'm looking forward to starting a part-time job to further improve my skills in a real work environment with a variety of projects.</p>
         </div>
         <img src="./images/_K4A5022.jpg" alt="Me programming">
     </section>
@@ -92,18 +92,20 @@
         <p>Now that you now a lot about me, let me now <br>if you are interested to work with me.</p>
         </aside>
         <aside class="contact-right">
-            <form action="#" method="post">
+            <form action="process_form.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
+        
                 <label for="email">E-Mail:</label>
                 <input type="email" id="email" name="email" required>
-                
+        
                 <label for="message">Nachricht:</label>
                 <textarea id="message" name="message" rows="4" resize="none" required></textarea>
-                
+        
                 <input type="submit" value="Absenden">
             </form>
+        
+            <div id="confirmation"></div>
         </aside>
     </section>
 
@@ -117,10 +119,10 @@
         </aside>
         <aside id="footer-right">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#my-skills">My Skills</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a class="navlink" href="#home">Home</a></li>
+                <li><a class="navlink" href="#my-skills">My Skills</a></li>
+                <li><a class="navlink" href="#about-me">About me</a></li>
+                <li><a class="navlink" href="#portfolio">Portfolio</a></li>
             </ul>
         </aside>
     </footer>

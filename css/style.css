@@ -31,7 +31,7 @@ body {
 #nav ul {
     list-style: none; /* Remove default list bullet points */
     display: flex; /* Arrange menu items horizontally */
-    margin-right: 100px; /* Remove default margin for the list */
+    margin-right: 2%; /* Remove default margin for the list */
     padding: 0; /* Remove default padding for the list */
     align-items: center;
 }
@@ -67,12 +67,20 @@ body {
 }
 
 @media (max-width: 768px) {
+   
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     #nav .menu-icon {
         display: block;
-        font-size: 30px; /* Passen Sie die Schriftgröße nach Bedarf an */
+        max-width: 15%;
+        height: auto;
+        font-size: 35px; /* Passen Sie die Schriftgröße nach Bedarf an */
         cursor: pointer; /* Zeigerzeiger für das Symbol */
-        margin-left: 70%;
+        margin-left: 77%;
     }
 
     /* Fügen Sie hier den Stil für das sichtbare Menü hinzu */
@@ -80,10 +88,11 @@ body {
         display: none; /* Das Menü standardmäßig ausblenden */
         background-color: #333; /* Hintergrundfarbe des Menüs */
         position: absolute;
-        top: 50px; /* Position des Menüs relativ zur Kopfzeile */
+        top: 80px; /* Position des Menüs relativ zur Kopfzeile */
         right: 0;
-        width: 30%; /* Vollständige Bildschirmbreite */
+        width: 22%; /* Vollständige Bildschirmbreite */
         padding: 0;
+        margin: 0;
         text-align: center;
     }
 
@@ -95,7 +104,7 @@ body {
         display: block;
         padding: 10px 0;
         color: #fff;
-        text-decoration: none;
+        text-decoration: none;;
     }
 
     /* Stil für Menülinks bei Hover */
