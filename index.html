@@ -92,20 +92,20 @@
         <p>Now that you now a lot about me, let me now <br>if you are interested to work with me.</p>
         </aside>
         <aside class="contact-right">
-            <form action="process_form.php" method="post">
+            <form action="https://formsubmit.co/9f02ac6e824c57bee4840e583eeb3056" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" name="name" required id="name">
         
                 <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" name="email" required id="email">
         
                 <label for="message">Nachricht:</label>
                 <textarea id="message" name="message" rows="4" resize="none" required></textarea>
         
-                <input type="submit" value="Absenden">
+                <button type="submit">Absenden</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
             </form>
-        
-            <div id="confirmation"></div>
         </aside>
     </section>
 

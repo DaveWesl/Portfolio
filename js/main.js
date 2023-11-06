@@ -53,20 +53,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //----------------------------------------------------------------
-//form
-
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the form from submitting in the default way
-        
-        // Assuming you have a confirmation message element with the ID "confirmation"
-        const confirmation = document.getElementById("confirmation");
-        confirmation.innerHTML = "Thanks for reaching out.";
-
-        // You can also reset the form fields after submission if needed
-        form.reset();
-    });
-});
-
-//----------------------------------------------------------------
