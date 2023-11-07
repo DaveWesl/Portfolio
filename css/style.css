@@ -121,32 +121,62 @@ body {
     justify-content: space-between;
     padding: 20px; /* Add some padding around the content */
     background-color: #f5f5f5; /* Set a background color */
-    margin-top: 30px;
+    margin-top: 5vh;
     width: 100%;
     height: 100vh;
 }
 
 #home img {
-    width: 550px; /* Set the image width */
-    height: 550px; /* Set the image height */
+    width: 27vw; /* Set the image width */
+    height: auto; /* Set the image height */
     border-radius: 50%; /* Make the image round by setting border-radius to 50% */
-    margin-right: -65px;
-    margin-left: 100px;
+    margin-right: -5vw;
+    margin-left: 5vw;
 }
 
 h1 {
-    font-size: 45px; /* Set the font size for the heading */
-    margin-top: 20px; /* Add some top margin to the heading */
+    font-size: 3vw; /* Set the font size for the heading */
+    margin-top: 3vh; /* Add some top margin to the heading */
 }
 
 .styling {
     background-color: black;
     opacity: 0.2;
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vh;
     position: absolute;
-    right: 100px;
-    bottom: 50px;
+    right: 8vw;
+    bottom: 7vh;
+    transition: transform 0.3s; /* Fügt eine Transformationsanimation hinzu */
+    cursor: pointer; /* Ändert den Mauszeiger, um anzuzeigen, dass das Element anklickbar ist */
+    text-align: center;
+    jus
+  }
+  
+  .styling p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .rotate {
+    transform: rotate(45deg); /* Fügt die Drehung hinzu */
+  }
+  
+@media (max-width: 768px) {
+h1 {
+    font-size: 25px; /* Set the font size for the heading */
+    margin-top: 3vh; /* Add some top margin to the heading */
+}
+
+#home img {
+    width: 35vw; /* Set the image width */
+    height: auto; /* Set the image height */
+    border-radius: 50%; /* Make the image round by setting border-radius to 50% */
+    margin-right: -10vw;
+    margin-left: 3vw;
+}
+
 }
 
 /*-----------------------------------------------*/
@@ -156,25 +186,26 @@ h1 {
     text-align: center; /* Center-align the content within the section */
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 100vh;
 }
 
 .my-skills-left {
-    margin: 0 20px; /* Add some margin for spacing */
+    margin: 0 0.5vw; /* Add some margin for spacing */
 }
 
 h2 {
-    font-size: 30px; /* Set the font size for the heading */
+    font-size: 24px; /* Set the font size for the heading */
 
 }
 
 .my-skills-right {
-    margin: 20px; /* Add margin for spacing around the icons */
+    margin: 10vw; /* Add margin for spacing around the icons */
     display: flex;
 }
 
 .icon-row p {
     margin: 0px 10px;
+    font-size: 18px;
 }
 
 #my-skills .fa-brands,
@@ -183,51 +214,116 @@ h2 {
     margin: 20px 10px 5px 10px; /* Add margin around the icons for spacing */
 }
 
+@media (max-width: 768px) {
+.my-skills-right {
+    margin: 10vw; /* Add margin for spacing around the icons */
+    display: flex;
+}
+
+.icon-row p {
+    margin: 0px 10px;
+    font-size: 14px;
+}
+
+#my-skills .fa-brands,
+.fa-solid {
+    font-size: 40px; /* Set the font size for the icons */
+    margin: 20px 10px 5px 10px; /* Add margin around the icons for spacing */
+}
+}
 /*-----------------------------------------------*/
 #about-me {
-    height: 500px;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#about-me .about {
-    width: 500px;
-    margin-left: 100px;
-}
-
-
-#about-me img {
-    height: auto;
-    width: 30%;
-    margin-right: 9%;
-    border-radius: 10%;
-}
-
-/*-----------------------------------------------*/
-#portfolio {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    height: 500px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    padding: 0 5%;
+    height: auto;
+  }
+  
+  #about-me .about {
+    text-align: left;
+  }
+  
+  #about-me h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+  
+  #about-me img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+  }
+  
+  @media (min-width: 768px) {
+    #about-me {
+      grid-template-columns: 1fr 1fr;
+      height: 100vh;
+    }
+  
+    #about-me img {
+      grid-column: 2 / -1; /* Set the image to the second column when there's enough space */
+    }
+  }
+  
+/*-----------------------------------------------*/
+
+#portfolio {
+    background-color: #f5f5f5;
+    height: 50vh;
 }
+
+#portfolio h2 {
+    grid-column: 1 / -1; /* Span all columns */
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 40px 0;
+}
+
+#grid-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+#grid-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grid-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
 
 /*-----------------------------------------------*/
 #contact {
     background-color: #f5f5f5;
-    height: 500px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 7vw;
 }
 
 .contact-left {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.contact-right {
     margin-right: 100px;
 }
 
@@ -263,7 +359,9 @@ footer {
     display: flex; /* Use flexbox to arrange elements horizontally */
     flex-direction: column;
     align-items: left; /* Center elements vertically within the section */
-    margin-left: 50px;
+    margin-left: 5%;
+    margin-right: 50%;
+    width: 20%;
 }
 
 #footer-left img {
@@ -278,20 +376,23 @@ footer {
     display: flex; /* Use flexbox to arrange elements horizontally */
     align-items: center; /* Center elements vertically within the section */
     flex-direction: column; /* Stack logos vertically */
-    margin: 15px;
+    margin-left: 6px;
+    width: 5%;
 }
 
 .logos i {
     font-size: 40px; /* Set the font size for the icons */
     margin: 10px; /* Add margin between icons and your main logo */
+    color: white;
 }
 
 /* Style for the right footer section */
 #footer-right {
-    margin-left: 50%; /* Add margin to the right side of the footer right section */
     display: flex; /* Use flexbox to arrange elements horizontally */
     align-items: center; /* Center elements vertically within the section */
     justify-content: center; /* Center the content horizontally */
+    width: 20%;
+    margin-right: 5%;
 }
 
 #footer-right ul {

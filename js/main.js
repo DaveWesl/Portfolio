@@ -53,3 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //----------------------------------------------------------------
+
+const div = document.querySelector('.styling');
+
+div.addEventListener('mouseenter', () => {
+  div.classList.add('rotate'); /* Fügt die CSS-Klasse 'rotate' hinzu */
+});
+
+div.addEventListener('mouseleave', () => {
+  div.classList.remove('rotate'); /* Entfernt die CSS-Klasse 'rotate' */
+});
