@@ -11,7 +11,7 @@ body {
 
 /* Style the navigation container */
 #nav {
-    background-color: #333; /* Background color for the navigation bar */
+    background-color: rgb(39, 60, 63, 0.8); /* Background color for the navigation bar */
     color: #fff; /* Text color */
     padding: 10px; /* Add some padding around the navigation bar */
     display: flex; /* Use flexbox to arrange items horizontally */
@@ -38,7 +38,7 @@ body {
 
 /* Style individual menu items */
 #nav li {
-    margin-right: 40px; /* Add some spacing between menu items */
+    margin-right: 30px; /* Add some spacing between menu items */
 }
 
 /* Style menu item links */
@@ -56,7 +56,7 @@ body {
 
 /* Limit the maximum width of the logo image */
 #nav a img {
-    max-width: 80px; /* Adjust the value to the desired width */
+    max-width: 60px; /* Adjust the value to the desired width */
     height: auto; /* Maintain the aspect ratio when resizing */
     margin-left: 20px;
     border-radius: 50%;
@@ -86,9 +86,9 @@ body {
     /* Fügen Sie hier den Stil für das sichtbare Menü hinzu */
     #nav ul {
         display: none; /* Das Menü standardmäßig ausblenden */
-        background-color: #333; /* Hintergrundfarbe des Menüs */
+        background-color: rgb(39, 60, 63, 0.8); /* Hintergrundfarbe des Menüs */
         position: absolute;
-        top: 80px; /* Position des Menüs relativ zur Kopfzeile */
+        top: 85px; /* Position des Menüs relativ zur Kopfzeile */
         right: 0;
         width: 22%; /* Vollständige Bildschirmbreite */
         padding: 0;
@@ -109,7 +109,7 @@ body {
 
     /* Stil für Menülinks bei Hover */
     #nav ul li a:hover {
-        background-color: #555;
+        background-color: #595840;
         text-decoration: none;
     }
 }
@@ -120,7 +120,7 @@ body {
     align-items: center; /* Center-align the content vertically within the section */
     justify-content: space-between;
     padding: 20px; /* Add some padding around the content */
-    background-color: #f5f5f5; /* Set a background color */
+    background-color: rgb(164, 202, 218, 0.1); /* Set a background color */
     margin-top: 5vh;
     width: 100%;
     height: 100vh;
@@ -138,30 +138,6 @@ h1 {
     font-size: 3vw; /* Set the font size for the heading */
     margin-top: 3vh; /* Add some top margin to the heading */
 }
-
-.styling {
-    background-color: black;
-    opacity: 0.2;
-    width: 10vw;
-    height: 10vh;
-    position: absolute;
-    right: 8vw;
-    bottom: 7vh;
-    transition: transform 0.3s; /* Fügt eine Transformationsanimation hinzu */
-    cursor: pointer; /* Ändert den Mauszeiger, um anzuzeigen, dass das Element anklickbar ist */
-    text-align: center;
-    jus
-  }
-  
-  .styling p {
-    margin: 0;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .rotate {
-    transform: rotate(45deg); /* Fügt die Drehung hinzu */
-  }
   
 @media (max-width: 768px) {
 h1 {
@@ -237,7 +213,7 @@ h2 {
     grid-template-columns: 1fr;
     gap: 20px;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: rgb(164, 202, 218, 0.1);
     padding: 20px;
     text-align: center;
     padding: 0 5%;
@@ -277,8 +253,7 @@ h2 {
 /*-----------------------------------------------*/
 
 #portfolio {
-    background-color: #f5f5f5;
-    height: 50vh;
+    height: 100vh;
 }
 
 #portfolio h2 {
@@ -291,12 +266,12 @@ h2 {
 }
 
 #grid-container {
-    background-color: #f5f5f5;
     padding: 20px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+    padding-top: 100px;
 }
 
 #grid-container div {
@@ -315,7 +290,7 @@ h2 {
 
 /*-----------------------------------------------*/
 #contact {
-    background-color: #f5f5f5;
+    background-color: rgb(164, 202, 218, 0.1);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -343,11 +318,18 @@ textarea {
     resize: none;
 }
 
+button {
+    background-color: #D8F0F2;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+}
+
 /*-----------------------------------------------*/
 
 /* Style for the footer section */
 footer {
-    background-color: #333; /* Background color for the footer */
+    background-color: #546666; /* Background color for the footer */
     color: #fff; /* Text color for the footer */
     padding: 20px; /* Add padding around the content */
     display: flex; /* Use flexbox to create a horizontal layout */
