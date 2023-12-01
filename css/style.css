@@ -1,7 +1,8 @@
 * {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
     width: 100%;    
+    font-size: 16px;
 }
 
 body {
@@ -9,17 +10,24 @@ body {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    * { 
+        font-size: 14px;
+}
+}
+
 /* Style the navigation container */
 #nav {
-    background-color: rgb(39, 60, 63, 0.8); /* Background color for the navigation bar */
+    background: linear-gradient(180deg, rgb(51, 83, 87, 0.8) 0%, rgb(62, 119, 122, 0.8)100%); /* Background color for the navigation bar */
     color: #fff; /* Text color */
-    padding: 10px; /* Add some padding around the navigation bar */
+    padding: 0.1rem; /* Add some padding around the navigation bar */
     display: flex; /* Use flexbox to arrange items horizontally */
     justify-content: space-between; /* Space between logo and menu items */
     position: fixed; /* Fix the navigation bar position */
     top: 0; /* Position it at the top of the viewport */
     width: 100%; /* Make it 100% of the viewport width */
     z-index: 100; /* Ensure it's above other content */
+    border-radius: 0 0 2rem 2rem ;
 }
 
 /* Style the logo */
@@ -72,6 +80,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-radius: 0 0 0 2rem ;
     }
 
     #nav .menu-icon {
@@ -81,14 +90,17 @@ body {
         font-size: 35px; /* Passen Sie die Schriftgröße nach Bedarf an */
         cursor: pointer; /* Zeigerzeiger für das Symbol */
         margin-left: 77%;
+        margin: auto;
+        padding-left: 1rem;
     }
 
     /* Fügen Sie hier den Stil für das sichtbare Menü hinzu */
     #nav ul {
         display: none; /* Das Menü standardmäßig ausblenden */
-        background-color: rgb(39, 60, 63, 0.8); /* Hintergrundfarbe des Menüs */
+        background: linear-gradient(180deg, rgb(62, 119, 122, 0.8), rgb(51, 83, 87, 0.8)100%); /* Hintergrundfarbe des Menüs */
+        border-radius: 0 0 1rem 1rem ;
         position: absolute;
-        top: 85px; /* Position des Menüs relativ zur Kopfzeile */
+        top: 4.7rem; /* Position des Menüs relativ zur Kopfzeile */
         right: 0;
         width: 22%; /* Vollständige Bildschirmbreite */
         padding: 0;
@@ -109,7 +121,7 @@ body {
 
     /* Stil für Menülinks bei Hover */
     #nav ul li a:hover {
-        background-color: #595840;
+        background-color: #335357;
         text-decoration: none;
     }
 }
@@ -118,7 +130,7 @@ body {
 #home {
     display: flex; /* Use flexbox to create a horizontal layout */
     align-items: center; /* Center-align the content vertically within the section */
-    justify-content: space-between;
+    justify-content: start;
     padding: 20px; /* Add some padding around the content */
     background-color: rgb(164, 202, 218, 0.1); /* Set a background color */
     margin-top: 5vh;
@@ -127,30 +139,57 @@ body {
 }
 
 #home img {
-    width: 27vw; /* Set the image width */
+    width: 25vw; /* Set the image width */
     height: auto; /* Set the image height */
     border-radius: 50%; /* Make the image round by setting border-radius to 50% */
-    margin-right: -5vw;
-    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-left: 10vw;
+}
+
+.homeText {
+    width: 30vw;
+}
+
+.homeText p {
+    width: 85%;
+    color: #1b2e31;
 }
 
 h1 {
-    font-size: 3vw; /* Set the font size for the heading */
+    font-size: 3rem; /* Set the font size for the heading */
     margin-top: 3vh; /* Add some top margin to the heading */
 }
+
+.name {
+    text-decoration: underline;
+    text-decoration-color: #62aead;
+    font-size: 3rem;
+}
+
+
   
 @media (max-width: 768px) {
 h1 {
-    font-size: 25px; /* Set the font size for the heading */
+    font-size: 3rem; /* Set the font size for the heading */
     margin-top: 3vh; /* Add some top margin to the heading */
 }
 
+.homeText {
+    width: 50vw;
+    z-index: 2;
+}
+
+.homeText p {
+    width: 80%;
+    color: #1b2e31;
+}
+
 #home img {
-    width: 35vw; /* Set the image width */
+    width: 40vw; /* Set the image width */
     height: auto; /* Set the image height */
     border-radius: 50%; /* Make the image round by setting border-radius to 50% */
-    margin-right: -10vw;
-    margin-left: 3vw;
+    margin-right: 2vw;
+    margin-left: 0;
 }
 
 }
@@ -170,7 +209,7 @@ h1 {
 }
 
 h2 {
-    font-size: 24px; /* Set the font size for the heading */
+    font-size: 1.5rem; /* Set the font size for the heading */
 
 }
 
@@ -210,18 +249,19 @@ h2 {
 /*-----------------------------------------------*/
 #about-me {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: center;
-    background-color: rgb(164, 202, 218, 0.1);
-    padding: 20px;
+    justify-items: center;
+    background-color: rgba(164, 202, 218, 0.1);
+    padding: 5%;
     text-align: center;
-    padding: 0 5%;
-    height: auto;
-  }
+}
+
   
   #about-me .about {
     text-align: left;
+    width: 80%;
   }
   
   #about-me h2 {
@@ -232,28 +272,39 @@ h2 {
   }
   
   #about-me img {
-    max-width: 60%;
+    max-width: 40%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     justify-self: center;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     #about-me {
-      grid-template-columns: 1fr 1fr;
-      height: 100vh;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
     }
+
+    #about-me .about {
+        text-align: left;
+        width: 80%;
+      }
   
     #about-me img {
-      grid-column: 2 / -1; /* Set the image to the second column when there's enough space */
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      justify-self: center;
     }
   }
   
 /*-----------------------------------------------*/
 
 #portfolio {
-    height: 100vh;
+    height: auto;
+    margin-top: 4rem;
 }
 
 #portfolio h2 {
@@ -269,7 +320,7 @@ h2 {
     padding: 20px;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding-top: 100px;
 }
@@ -285,6 +336,10 @@ h2 {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+
 }
   
 
@@ -319,7 +374,8 @@ textarea {
 }
 
 button {
-    background-color: #D8F0F2;
+    background-color: #376467;
+    color: white;
     height: 50px;
     border: none;
     font-size: 20px;
@@ -329,7 +385,8 @@ button {
 
 /* Style for the footer section */
 footer {
-    background-color: #546666; /* Background color for the footer */
+    background: linear-gradient(180deg, rgb(51, 83, 87, 0.8) 0%, rgb(62, 119, 122, 0.8)100%); /* Background color for the footer */
+    border-radius: 2rem 2rem 0 0;
     color: #fff; /* Text color for the footer */
     padding: 20px; /* Add padding around the content */
     display: flex; /* Use flexbox to create a horizontal layout */
