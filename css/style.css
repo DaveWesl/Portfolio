@@ -257,7 +257,6 @@ h2 {
     padding: 5%;
     text-align: center;
 }
-
   
   #about-me .about {
     text-align: left;
@@ -272,7 +271,7 @@ h2 {
   }
   
   #about-me img {
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
