@@ -428,12 +428,16 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: #62aead;
 }
 
 #grid-container .language {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 2rem;
+    width: 70%;
+    font-weight: bold;
 }
 
 #grid-container {
@@ -452,14 +456,14 @@ h3 {
 }
 
 #grid-container img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#grid-container .second-project {
-    display: none;
+#grid-container a {
+    width: 95%;
 }
 
 #grid-container .third-project {
