@@ -53,3 +53,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //----------------------------------------------------------------
+//mySkills animation
+
+document.addEventListener("DOMContentLoaded", function() {
+    var mySkillsSection = document.getElementById('my-skills');
+  
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          mySkillsSection.classList.add('animated');
+        } else {
+          mySkillsSection.classList.remove('animated');
+        }
+      });
+    }
+  
+    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+  
+    observer.observe(mySkillsSection);
+  });
