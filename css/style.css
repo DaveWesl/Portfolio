@@ -28,39 +28,39 @@ p {
 }
 /* Style the navigation container */
 #nav {
-    background: linear-gradient(180deg, rgb(51, 83, 87, 0.8) 0%, rgb(62, 119, 122, 0.8)100%); /* Background color for the navigation bar */
-    color: #fff; /* Text color */
-    padding: 0.1rem; /* Add some padding around the navigation bar */
-    display: flex; /* Use flexbox to arrange items horizontally */
-    justify-content: space-between; /* Space between logo and menu items */
-    position: fixed; /* Fix the navigation bar position */
+    background: linear-gradient(180deg, rgb(51, 83, 87, 0.8) 0%, rgb(62, 119, 122, 0.8)100%); 
+    color: #fff; 
+    padding: 0.1rem; 
+    display: flex; 
+    justify-content: space-between; 
+    position: fixed; 
     align-items: center;
-    top: 0; /* Position it at the top of the viewport */
-    width: 100%; /* Make it 100% of the viewport width */
-    z-index: 100; /* Ensure it's above other content */
+    top: 0; 
+    width: 100%; 
+    z-index: 100; 
     border-radius: 0 0 2rem 2rem ;
 }
 
 /* Style the menu list */
 #nav ul {
-    list-style: none; /* Remove default list bullet points */
-    display: flex; /* Arrange menu items horizontally */
-    margin-right: 5%; /* Remove default margin for the list */
-    padding: 0; /* Remove default padding for the list */
+    list-style: none; 
+    display: flex; 
+    margin-right: 5%; 
+    padding: 0; 
     align-items: center;
     text-align: end;
 }
 
 /* Style individual menu items */
 #nav li {
-    margin-right: 0; /* Add some spacing between menu items */
+    margin-right: 0; 
 }
 
 /* Style menu item links */
 a {
-    color: #fff; /* Text color for menu links */
-    text-decoration: none; /* Remove underlines from menu links */
-    font-weight: bold; /* Make the text bold */
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
     white-space: nowrap;
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ a {
 
 /* Style menu item links on hover */
 #nav a:hover {
-    text-decoration: underline; /* Underline the link on hover */
+    text-decoration: underline; 
 }
 
 a.myname {
@@ -95,8 +95,8 @@ a.myname {
         display: block;
         max-width: 15%;
         height: auto;
-        font-size: 35px; /* Passen Sie die Schriftgröße nach Bedarf an */
-        cursor: pointer; /* Zeigerzeiger für das Symbol */
+        font-size: 35px; 
+        cursor: pointer; 
         margin-left: 77%;
         margin: auto;
         padding-left: 1rem;
@@ -104,13 +104,13 @@ a.myname {
 
     /* Fügen Sie hier den Stil für das sichtbare Menü hinzu */
     #nav ul {
-        display: none; /* Das Menü standardmäßig ausblenden */
-        background: linear-gradient(180deg, rgb(62, 119, 122, 0.8), rgb(51, 83, 87, 0.8)100%); /* Hintergrundfarbe des Menüs */
+        display: none; 
+        background: linear-gradient(180deg, rgb(62, 119, 122, 0.8), rgb(51, 83, 87, 0.8)100%); 
         border-radius: 0 0 1rem 1rem ;
         position: absolute;
-        top: 4.7rem; /* Position des Menüs relativ zur Kopfzeile */
+        top: 4.7rem; 
         right: 0;
-        width: 22%; /* Vollständige Bildschirmbreite */
+        width: 22%; 
         padding: 0;
         margin: 0;
         text-align: center;
@@ -136,19 +136,19 @@ a.myname {
 
 /*-----------------------------------------------*/
 #home {
-    display: flex; /* Use flexbox to create a horizontal layout */
-    align-items: center; /* Center-align the content vertically within the section */
+    display: flex; 
+    align-items: center; 
     justify-content: center;
-    padding: 20px; /* Add some padding around the content */
-    background-color: rgb(164, 202, 218, 0.1); /* Set a background color */
+    padding: 20px; 
+    background-color: rgb(164, 202, 218, 0.1); 
     margin-top: 5vh;
     width: 100%;
     height: 100vh;
 }
 
 #home img {
-    width: 22vw; /* Set the image width */
-    height: auto; /* Set the image height */
+    width: 22vw; 
+    height: auto; 
     border-radius: 10%;
     margin-left: 5%;
 }
@@ -177,7 +177,7 @@ a.myname {
 }
 
 h1 {
-    font-size: 3rem; /* Add some top margin to the heading */
+    font-size: 3rem; 
 }
 
 .name {
@@ -189,7 +189,7 @@ h1 {
   
 @media (max-width: 900px) {
 h1 {
-    font-size: 3rem; /* Add some top margin to the heading */
+    font-size: 3rem; 
 }
 
 .homeText {
@@ -209,8 +209,8 @@ h1 {
 }
 
 #home img {
-    width: 35vw; /* Set the image width */
-    height: auto; /* Set the image height */
+    width: 35vw; 
+    height: auto; 
     margin-right: 2vw;
     margin-left: 0;
 }
@@ -220,19 +220,19 @@ h1 {
 @media (max-width: 640px) {
     #home {
         display: flex;
-        flex-direction: column; /* Use flexbox to create a horizontal layout */
+        flex-direction: column; 
         align-items: center;
-        padding: auto; /* Add some padding around the content */
-        background-color: rgb(164, 202, 218, 0.1); /* Set a background color */
-        margin-top: 10vh;
+        padding: auto; 
+        background-color: rgb(164, 202, 218, 0.1); 
+        margin-top: 5vh;
         width: 100%;
         height: auto;
         text-align: center;
     }
 
     #home img {
-        width: 50%; /* Set the image width */
-        height: auto; /* Set the image height */
+        width: 50%; 
+        height: auto; 
         border-radius: 10%;
         margin: 2rem;
     }
@@ -250,24 +250,24 @@ h1 {
 /*-----------------------------------------------*/
 
 #my-skills {
-    padding: 20px; /* Add some padding around the content */
-    text-align: center; /* Center-align the content within the section */
+    padding: 20px; 
+    text-align: center; 
     display: flex;
     align-items: center;
     height: 100vh;
 }
 
 .my-skills-left {
-    margin: 0 0.5vw; /* Add some margin for spacing */
+    margin: 0 0.5vw; 
 }
 
 h2 {
-    font-size: 2rem; /* Set the font size for the heading */
+    font-size: 2rem; 
 
 }
 
 .my-skills-right {
-    margin: 10vw; /* Add margin for spacing around the icons */
+    margin: 10vw; 
     display: flex;
 }
 
@@ -279,13 +279,13 @@ h2 {
 
 #my-skills .fa-brands,
 .fa-solid {
-    font-size: 55px; /* Set the font size for the icons */
-    margin: 20px 10px 5px 10px; /* Add margin around the icons for spacing */
+    font-size: 55px; 
+    margin: 20px 10px 5px 10px; 
 }
 
 @media (max-width: 900px) {
 .my-skills-right {
-    margin: 10vw; /* Add margin for spacing around the icons */
+    margin: 10vw; 
     display: flex;
 }
 
@@ -296,16 +296,16 @@ h2 {
 
 #my-skills .fa-brands,
 .fa-solid {
-    font-size: 40px; /* Set the font size for the icons */
-    margin: 20px 10px 5px 10px; /* Add margin around the icons for spacing */
+    font-size: 40px; 
+    margin: 20px 10px 5px 10px; 
 }
 }
 
 
 @media (max-width: 640px) {
     #my-skills {
-        padding: 20px; /* Add some padding around the content */
-        text-align: center; /* Center-align the content within the section */
+        padding: 20px; 
+        text-align: center; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -588,72 +588,113 @@ button:hover {
 
 /* Style for the footer section */
 footer {
-    background: linear-gradient(180deg, rgb(51, 83, 87, 0.8) 0%, rgb(62, 119, 122, 0.8)100%); /* Background color for the footer */
+    background: linear-gradient(180deg, rgb(51, 83, 87, 0.8) 0%, rgb(62, 119, 122, 0.8)100%); 
     border-radius: 2rem 2rem 0 0;
-    color: #fff; /* Text color for the footer */
-    padding: 20px; /* Add padding around the content */
-    display: flex; /* Use flexbox to create a horizontal layout */
-    justify-content: space-between; /* Space elements evenly within the footer */
+    color: #fff; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between;
 }
 
 /* Style for the left footer section */
 #footer-left {
-    display: flex; /* Use flexbox to arrange elements horizontally */
-    flex-direction: column;
-    align-items: left; /* Center elements vertically within the section */
-    margin-left: 5%;
-    margin-right: 50%;
-    width: 20%;
-}
-
-#footer-left img {
-    width: 70px; /* Set the image width */
-    height: 70px; /* Set the image height */
-    border-radius: 50%; /* Make the image round by setting border-radius to 50% */
-    margin-right: 10px; /* Add margin to the right of the image */
-    margin-top: 20px;
-}
-
-.logos {
-    display: flex; /* Use flexbox to arrange elements horizontally */
-    align-items: center; /* Center elements vertically within the section */
-    flex-direction: column; /* Stack logos vertically */
-    margin-left: 6px;
-    width: 5%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-items: center;
+    width: 50%;
+    padding-left: 5%;
 }
 
 .logos i {
-    font-size: 40px; /* Set the font size for the icons */
-    margin: 10px; /* Add margin between icons and your main logo */
+    font-size: 40px;
+    margin: 0.75rem; 
+    padding-left: 0;
     color: white;
+}
+
+a.myname2 {
+    grid-column: span 2;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Wallpoet', sans-serif;
+    padding: 0;
+    width: 5%;
+}
+
+a.myname2:hover {
+    text-decoration: underline; 
+}
+
+a.logos {
+    width: 5%;
 }
 
 /* Style for the right footer section */
 #footer-right {
-    display: flex; /* Use flexbox to arrange elements horizontally */
-    align-items: center; /* Center elements vertically within the section */
-    justify-content: center; /* Center the content horizontally */
-    width: 20%;
-    margin-right: 5%;
+    display: flex; 
+    align-items: center; 
+    justify-content: end; 
+    width: 50%;
+    text-align: start;
+    padding-right: 30%;
 }
 
 #footer-right ul {
-    list-style: none; /* Remove the bullet points from the list */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox to arrange list items horizontally */
-    flex-direction: column; /* Stack list items vertically */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    border-left: 1px solid white;
+    width: 50%;
 }
 
 #footer-right li {
-    margin-bottom: 10px; /* Add margin between list items in a vertical column layout */
+    margin-bottom: auto;
+    padding: 1rem; 
 }
 
 #footer-right a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Set link text color */
+    text-decoration: none; 
+    color: #fff; 
 }
 
 #footer-right a:hover {
-    text-decoration: underline; /* Add underline to links on hover */
+    text-decoration: underline; 
+}
+
+@media (max-width: 640px) {
+    #footer-left {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-items: center;
+        width: 50%;
+        padding-left: 0%;
+        margin-right: 10%;
+    }
+
+    a.myname2 {
+        grid-column: span 2;
+        font-size: 2rem;
+        font-weight: 100;
+        font-family: 'Wallpoet', sans-serif;
+        padding: 0;
+        width: 80%;
+    }
+
+    a.logos {
+        width: 50%;
+    }
+
+    #footer-right ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none; 
+        margin: 0; 
+        padding: 0; 
+        border-left: 1px solid white;
+        width: 50%;
+    }
 }
