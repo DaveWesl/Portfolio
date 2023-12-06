@@ -178,6 +178,7 @@ a.myname {
 
 h1 {
     font-size: 3rem; 
+    color: #333;
 }
 
 .name {
@@ -643,7 +644,6 @@ a.logos {
     width: 5%;
 }
 
-/* Style for the right footer section */
 #footer-right {
     display: flex; 
     align-items: center; 
@@ -675,6 +675,43 @@ a.logos {
 
 #footer-right a:hover {
     text-decoration: underline; 
+}
+
+#footer-right .legacylink {
+    text-decoration: underline;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: #333;
+    max-height: 90%;
+    overflow-y: auto; /* Scrollbar bei Bedarf */
+    width: 70%;
+}
+
+#popup button {
+    width: 25%;
+    margin-left: 75%;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
 @media (max-width: 640px) {
