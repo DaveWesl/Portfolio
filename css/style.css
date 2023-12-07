@@ -53,7 +53,7 @@ p {
 
 /* Style individual menu items */
 #nav li {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 /* Style menu item links */
@@ -68,7 +68,7 @@ a {
 
 /* Style menu item links on hover */
 #nav a:hover {
-    text-decoration: underline; 
+    border-bottom: 4px solid;
 }
 
 a.myname {
