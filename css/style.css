@@ -55,7 +55,6 @@ p {
     margin-right: 0;
 }
 
-
 a {
     color: #fff; 
     text-decoration: none; 
@@ -64,10 +63,18 @@ a {
     padding: 0;
 }
 
+ul#menu {
+    justify-content: end;
+    text-align: center;
+}
+
+li#menu {
+    width: 10%;
+}
 
 #menu a {
     position: relative; 
-    padding-bottom: 1rem;
+    padding: 1rem;
     transition: color 0.4s ease;
     letter-spacing: 1px;
 }
@@ -104,13 +111,6 @@ a.myname {
     display: none;
 }
 
-@media (max-width: 1000px) {
-    
-    #nav li:not(:last-child) {
-        margin-right: 2rem;
-    }
-}
-
 @media (max-width: 768px) {
    
     #nav {
@@ -124,7 +124,7 @@ a.myname {
         display: block;
         max-width: 15%;
         height: auto;
-        font-size: 35px; 
+        font-size: 2rem; 
         cursor: pointer; 
         margin-left: 77%;
         margin: auto;
@@ -170,6 +170,12 @@ a.myname {
     }
 }
 
+@media (max-width: 481px) {
+
+    #nav .menu-icon {
+        font-size: 2rem; 
+    }
+}
 /*-----------------------------------------------*/
 #home {
     display: flex; 
