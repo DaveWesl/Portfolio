@@ -432,6 +432,7 @@ h2 {
 #about-me .about {
     text-align: center;
     width: 80%;
+    margin: 0;
   }
 
   #about-me img {
@@ -529,6 +530,7 @@ h3 {
     #portfolio {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
         margin-top: 1rem;
         padding: 1rem;
@@ -538,11 +540,12 @@ h3 {
         padding: 3rem 1rem;
         text-align: center;
         display: flex;
+        flex-direction: column;
         padding-top: 5rem;
     }
 
     #grid-container img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
