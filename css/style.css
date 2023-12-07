@@ -51,24 +51,46 @@ p {
     text-align: end;
 }
 
-/* Style individual menu items */
-#nav li {
+#nav li:not(:last-child) {
     margin-right: 0;
 }
 
-/* Style menu item links */
+
 a {
     color: #fff; 
     text-decoration: none; 
-    font-weight: bold; 
     white-space: nowrap;
     margin: 0;
     padding: 0;
 }
 
-/* Style menu item links on hover */
+
+#menu a {
+    position: relative; 
+    padding-bottom: 1rem;
+    transition: color 0.4s ease;
+    letter-spacing: 1px;
+}
+
 #menu a:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+#menu a::after {
+    content: ''; 
+    display: block;
+    border-bottom: 25px solid transparent; 
+    position: absolute;
+    bottom: -0.7rem; 
+    left: 0;
+    width: 100%;
+    transition: color 0.4s ease;
+}
+
+#menu a:hover::after {
     border-bottom: 4px solid;
+    color: #62aead;
 }
 
 a.myname {
@@ -80,6 +102,13 @@ a.myname {
 
 #nav .menu-icon {
     display: none;
+}
+
+@media (max-width: 1000px) {
+    
+    #nav li:not(:last-child) {
+        margin-right: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -102,13 +131,12 @@ a.myname {
         padding-left: 1rem;
     }
 
-    /* Fügen Sie hier den Stil für das sichtbare Menü hinzu */
     #nav ul {
         display: none; 
         background: linear-gradient(180deg, rgb(62, 119, 122, 0.8), rgb(51, 83, 87, 0.8)100%); 
         border-radius: 0 0 1rem 1rem ;
         position: absolute;
-        top: 4.7rem; 
+        top: 4.2rem; 
         right: 0;
         width: 22%; 
         padding: 0;
@@ -127,9 +155,17 @@ a.myname {
         text-decoration: none;;
     }
 
-    /* Stil für Menülinks bei Hover */
+    #menu a::after { 
+        display: none;
+    }
+
+    #menu a:hover {
+        color: #fff;
+        font-weight: bold;
+    }
+
     #nav ul li a:hover {
-        background-color: #335357;
+        background-color: #62aead;
         text-decoration: none;
     }
 }
@@ -415,7 +451,7 @@ h2 {
     justify-content: center;
     height: auto;
     padding: 5rem;
-    margin: 1% 0 10% 0;
+    margin: 1% 0 15% 0;
 }
 
 #portfolio h1 {
@@ -424,7 +460,7 @@ h2 {
     color: #333;
     text-align: center;
     margin: 0;
-    padding: 20px 0 20px 0;
+    padding: 1rem 0 0 0;
 }
 
 h3 {
@@ -442,7 +478,7 @@ h3 {
 }
 
 #grid-container {
-    padding: 20px;
+    padding: 0 4rem;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -483,6 +519,10 @@ h3 {
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    #grid-container {
+        padding: 3rem 1rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -490,12 +530,12 @@ h3 {
         display: flex;
         flex-direction: column;
         height: auto;
-        margin-top: 4rem;
+        margin-top: 1rem;
         padding: 1rem;
     }
 
     #grid-container {
-        padding: 1rem;
+        padding: 3rem 1rem;
         text-align: center;
         display: flex;
         padding-top: 5rem;
@@ -548,9 +588,9 @@ textarea {
 button {
     background-color: #376467;
     color: white;
+    font-weight: 400;
     height: 50px;
     border: none;
-    font-weight: bold;
     font-size: 1.15rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -558,7 +598,8 @@ button {
 
 button:hover {
     background-color: #62aead;
-    transition: 100ms ease-in;
+    transition: 0.2s ease-in;
+    font-weight: bold;
 }
 
 @media (max-width: 640px) {
