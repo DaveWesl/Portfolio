@@ -67,7 +67,7 @@ a {
 }
 
 /* Style menu item links on hover */
-#nav a:hover {
+#menu a:hover {
     border-bottom: 4px solid;
 }
 
