@@ -2,21 +2,33 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll(".navlink");
+    const contactButton = document.querySelector('.button-1');
 
     for (const link of navLinks) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                const offset = 80; // Adjust this value as needed
-                window.scrollTo({
-                    top: targetElement.offsetTop - offset,
-                    behavior: 'smooth'
-                });
-            }
+            scrollToTarget(this.getAttribute('href'));
         });
+    }
+
+    if (contactButton) {
+        contactButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            scrollToTarget('#contact');
+        });
+    }
+
+    function scrollToTarget(target) {
+        const targetId = target.substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const offset = 80;
+            window.scrollTo({
+                top: targetElement.offsetTop - offset,
+                behavior: 'smooth'
+            });
+        }
     }
 });
 
