@@ -19,12 +19,25 @@ p {
     * { 
         font-size: 14px;
 }
+    p {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width: 480px) {
     * { 
         font-size: 10px;
 }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .button-1 a {
+        font-size: 1.5rem;
+    }
+
 }
 /* Style the navigation container */
 #nav {
@@ -170,10 +183,15 @@ a.myname {
     }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 480px) {
 
     #nav .menu-icon {
-        font-size: 2rem; 
+        font-size: 4rem; 
+        margin: 1rem;
+    }
+
+    #nav ul {
+        top: 6.1rem;
     }
 }
 /*-----------------------------------------------*/
@@ -480,9 +498,11 @@ h3 {
 #grid-container .language {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     padding: 0 2rem;
     width: 70%;
-    font-weight: bold;
+    color: #1b2e31;
+
 }
 
 #grid-container {
