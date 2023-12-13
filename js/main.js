@@ -23,7 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            const offset = 80;
+            let offset = 0;
+
+            // Prüfen, ob das Ziel-Element die ID 'home' hat
+            if (targetId === 'home') {
+                offset = 130;
+            }
+
             window.scrollTo({
                 top: targetElement.offsetTop - offset,
                 behavior: 'smooth'
@@ -31,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
 
 //----------------------------------------------------------------
 //menü navbar
