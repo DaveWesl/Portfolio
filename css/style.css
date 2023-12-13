@@ -738,7 +738,7 @@ footer {
     align-items: center; 
     justify-items: center;
     width: 50%;
-    padding-left: 5%;
+    padding-left: 0;
 }
 
 .logos i {
@@ -842,7 +842,6 @@ a.logos {
         align-items: center; 
         justify-items: center;
         width: 50%;
-        padding-left: 0%;
         margin-right: 10%;
     }
 
