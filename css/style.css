@@ -146,7 +146,7 @@ a.myname {
         position: absolute;
         top: 5.1rem; 
         right: 0;
-        width: 22%; 
+        width: 30%; 
         padding: 0;
         margin: 0;
         text-align: center;
@@ -194,8 +194,7 @@ a.myname {
 
     #nav ul li a {
         font-size: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem;
     }
 
 }
