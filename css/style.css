@@ -11,7 +11,7 @@ body {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #1b2e31;
 }
 
@@ -28,13 +28,9 @@ p {
 @media (max-width: 480px) {
     * { 
         font-size: 10px;
-}
-
-    p {
-        font-size: 1.5rem;
     }
 
-    .button-1 a {
+    p {
         font-size: 1.5rem;
     }
 
@@ -137,10 +133,9 @@ a.myname {
         display: block;
         max-width: 15%;
         height: auto;
-        font-size: 2rem; 
+        font-size: 3rem; 
         cursor: pointer; 
-        margin-left: 77%;
-        margin: auto;
+        margin: 1rem 0;
         padding-left: 1rem;
     }
 
@@ -149,7 +144,7 @@ a.myname {
         background: linear-gradient(180deg, rgb(62, 119, 122, 0.8), rgb(51, 83, 87, 0.8)100%); 
         border-radius: 0 0 1rem 1rem ;
         position: absolute;
-        top: 4.2rem; 
+        top: 5.1rem; 
         right: 0;
         width: 22%; 
         padding: 0;
@@ -165,7 +160,10 @@ a.myname {
         display: block;
         padding: 10px 0;
         color: #fff;
-        text-decoration: none;;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
     #menu a::after { 
@@ -193,6 +191,13 @@ a.myname {
     #nav ul {
         top: 6.1rem;
     }
+
+    #nav ul li a {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
 }
 /*-----------------------------------------------*/
 #home {
@@ -231,24 +236,28 @@ a.myname {
     cursor: pointer;
 }
 
+.button-1 a {
+    font-size: 1.1rem;
+}
+
 .button-1:hover {
     background-color: #62aead;
     transition: 100ms ease-in;
 }
 
 h1 {
-    font-size: 3rem; 
+    font-size: 3.5rem; 
     color: #333;
 }
 
 .name {
     text-decoration: underline;
     text-decoration-color: #62aead;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
   
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 h1 {
     font-size: 3rem; 
 }
@@ -276,6 +285,13 @@ h1 {
     margin-left: 0;
 }
 
+}
+
+@media (max-width: 768px) {
+
+    .button-1 a {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -306,6 +322,13 @@ h1 {
     .homeText p {
         width: auto;
         color: #1b2e31;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .button-1 a {
+        font-size: 1.5rem;
     }
 }
 /*-----------------------------------------------*/
@@ -406,6 +429,10 @@ h2 {
     width: 40%;
     margin-right: 10%;
   }
+
+  #about-me h1 {
+    margin: 0;
+  }
   
   #about-me h2 {
     font-size: 2rem;
@@ -443,7 +470,7 @@ h2 {
     }
   }
 
-@media (max-width: 640px) {
+@media (max-width: 850px) {
   #about-me {
     display: flex;
     flex-direction: column;
@@ -590,6 +617,10 @@ h3 {
     padding: 0 7vw;
 }
 
+#contact h1{
+    margin: 0;
+}
+
 .contact-left {
     margin-right: 100px;
     width: 30%;
@@ -602,6 +633,7 @@ h3 {
 label {
     display: block;
     margin-top: 10px;
+    font-size: 1.1rem;
 }
 input, textarea {
     width: 100%;
@@ -621,7 +653,7 @@ button {
     font-weight: 400;
     height: 50px;
     border: none;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -631,6 +663,16 @@ button:hover {
     transition: 0.2s ease-in;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    label {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+    }
+    }
 
 @media (max-width: 640px) {
     #contact {
@@ -665,8 +707,17 @@ button:hover {
         margin-top: 5px;
         border: 1px solid #ccc;
         border-radius: 4px;
+    }   
+}
+
+@media (max-width: 480px) {
+    label {
+        font-size: 1.5rem;
     }
-    
+
+    button {
+        font-size: 1.5rem;
+    }
 }
 
 /*-----------------------------------------------*/
