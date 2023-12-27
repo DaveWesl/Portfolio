@@ -563,9 +563,6 @@ h3 {
     width: 95%;
 }
 
-#grid-container .third-project {
-    display: none;
-}
 
 @media (max-width: 900px) {
     #portfolio {
